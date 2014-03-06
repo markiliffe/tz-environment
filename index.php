@@ -162,14 +162,14 @@
 <div id='map'></div>
 
 <script>
-var map = L.map('map').setView([-6.8191,39.2967], 13);
+var map = L.map('map').setView([-6.8191,39.2967], 11);
 
 
 
 var ui = document.getElementById('map-ui');
 addLayer(L.mapbox.tileLayer('markiliffe.map-2yitmcy5'), 'Base Map', 1);
 addLayer(L.mapbox.tileLayer('markiliffe.gqd3rmso'), 'Aerial Imagery', 2);
-addLayer(L.mapbox.tileLayer('markiliffe.hif3whfr'), 'Buildings', 3);
+addLayer(L.mapbox.tileLayer('markiliffe.WPM_Full'), 'Water Points', 3);
 map.legendControl.addLegend(document.getElementById('legend-content').innerHTML);
     addLayer(L.tileLayer.wms('http://localhost:4567/geoserver/geonode/ows', {
 	layers: 'geonode:buildings',
