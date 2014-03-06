@@ -168,10 +168,9 @@ var map = L.map('map').setView([-6.8191,39.2967], 11);
 
 var ui = document.getElementById('map-ui');
 addLayer(L.mapbox.tileLayer('markiliffe.map-2yitmcy5'), 'Base Map', 1);
-addLayer(L.mapbox.tileLayer('markiliffe.gqd3rmso'), 'Aerial Imagery', 2);
-addLayer(L.mapbox.tileLayer('markiliffe.WPM_Full'), 'Water Points', 3);
-map.legendControl.addLegend(document.getElementById('legend-content').innerHTML);
-    addLayer(L.tileLayer.wms('http://localhost:4567/geoserver/geonode/ows', {
+addLayer(L.mapbox.tileLayer('markiliffe.ja8hk4n7'), '2002 Aerial Imagery', 2);
+addLayer(L.mapbox.tileLayer('http://maps.geotastic.org/tiles/daressalaam/{z}/{x}/{y}.png'), '2013 Aerial Imagery', 3);
+addLayer(L.tileLayer.wms('http://162.243.57.235/geoserver/geonode/wms', {
 	layers: 'geonode:buildings',
 	transparent: true,
 	format: 'image/png'
